@@ -36,7 +36,7 @@ const Login: React.FC = () => {
   }, [searchParams]);
 
   const handleKakaoLogin = () => {
-    window.location.href = "http://localhost:8000/api/auth/kakao/login";
+    window.location.href = "http://localhost:8001/api/auth/kakao/login";
   };
 
   const handleSocialLogin = (provider: "google" | "naver" | "kakao") => {
