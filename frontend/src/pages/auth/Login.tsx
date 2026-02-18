@@ -60,36 +60,6 @@ const Login: React.FC = () => {
         textClass: "text-black",
         enabled: true,
       },
-      {
-        key: "naver" as const,
-        label: "네이버로 계속하기",
-        icon: (
-        <img
-        src={naverIcon}
-        alt="네이버"
-        className="w-6 h-6 object-contain"
-        />
-        ),
-        bg: "#03C75A",
-        textClass: "text-white",
-        enabled: true,
-        // badge: "준비중",
-      },
-      {
-        key: "google" as const,
-        label: "Google로 계속하기",
-        icon: (
-        <img
-        src={googleIcon}
-        alt="구글"
-        className="w-6 h-6 object-contain"
-        />
-        ),
-        bg: "#4285F4",
-        textClass: "text-white",
-        enabled: true,
-        // badge: "준비중",
-      },
     ],
     []
   );
