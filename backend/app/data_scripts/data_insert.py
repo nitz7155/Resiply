@@ -99,7 +99,7 @@ def data_insert_func():
         # 4. Recipe
         # -------------------------------------------------------
         # [수정] 절대 경로 변수 사용
-        RECIPE_CNT = 60 # 1153
+        RECIPE_CNT = 1153 # 1153
 
         df_recipe_raw = pd.read_csv(RECIPE_CSV_PATH)
         df_recipe_raw.drop_duplicates(subset=['Title'], inplace=True, ignore_index=True)

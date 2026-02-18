@@ -19,10 +19,10 @@ DB_NAME = os.getenv("DB_NAME")
 
 
 def get_conn_from_env():
-    # prefer an explicit DATABASE_URL env var if provided
+    # prefer an explicit DATABASE_URL .env var if provided
     db_url = os.environ.get('DATABASE_URL') or os.environ.get('DATABASE_URI')
     if not db_url:
-        # fall back to assembled URL if env parts provided
+        # fall back to assembled URL if .env parts provided
         if DB_USER and DB_PASSWORD and DB_HOST and DB_PORT and DB_NAME:
             db_url = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 

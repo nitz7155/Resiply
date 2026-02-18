@@ -10,13 +10,13 @@ from sqlalchemy import case, or_
 # -----------------------------------------------------------
 # 1. 환경 설정 및 경로 추가
 # -----------------------------------------------------------
-# .env 파일 로드
+# ..env 파일 로드
 load_dotenv()
 
 # Voyage Client 설정
 EMBEDDING_API_KEY = os.getenv('EMBEDDING_API_KEY')
 if not EMBEDDING_API_KEY:
-    raise ValueError("❌ .env 파일에 'EMBEDDING_API_KEY'가 없습니다.")
+    raise ValueError("❌ ..env 파일에 'EMBEDDING_API_KEY'가 없습니다.")
 
 client = voyageai.Client(api_key=EMBEDDING_API_KEY)
 

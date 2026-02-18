@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """Filter rows where `detail_images` has exactly one image URL ending with .jpg or .png.
 
 Usage:

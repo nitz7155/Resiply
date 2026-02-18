@@ -16,7 +16,7 @@ from schemas.user import CurrentUserResponse
 
 logger = logging.getLogger(__name__)
 
-ENV_PATH = Path(__file__).resolve().parent.parent.parent / ".env"
+ENV_PATH = Path(__file__).resolve().parent.parent.parent / "..env"
 load_dotenv(ENV_PATH)
 
 KAKAO_CLIENT_ID = os.getenv("KAKAO_CLIENT_ID")
