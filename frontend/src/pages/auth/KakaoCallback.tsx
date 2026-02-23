@@ -12,7 +12,7 @@ const KakaoCallback: React.FC = () => {
       try {
         // 백엔드에서 쿠키와 localStorage에 isLogin을 저장
         // 여기서는 로그인 상태 확인 API 호출
-        const response = await fetch("http://localhost:8001/api/auth/kakao/me", {
+        const response = await fetch("https://resiply.nitz7155.me/api/auth/kakao/me", {
           method: "GET",
           credentials: "include", // 쿠키 포함
         });
