@@ -47,11 +47,9 @@ app.include_router(mf_recommend.router)
 
 # CORS 설정: credentials include를 위해 구체적인 origin 명시
 origins = [
-    "http://localhost:5173",  # Vite 개발 서버
-    "http://localhost:3000",  # 대체 포트
-    "http://localhost:3001",  # 대체 포트
-    "http://127.0.0.1:5173",
-    "http://127.0.0.1:3000",
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://resiply.nitz7155.me"
 ]
 app.add_middleware(
     CORSMiddleware,
